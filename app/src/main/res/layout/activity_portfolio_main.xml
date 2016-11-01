@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_portfolio_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.soufflet.mobile.mynanodegreeapps.PortfolioMainActivity"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:text="My Nanodegree Apps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/title"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:text="POPULAR MOVIES"
+        android:background="@android:color/holo_orange_light"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/button1"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:onClick="goToMoviesApp"/>
+
+    <Button
+        android:text="STOCK HAWK"
+        android:background="@android:color/holo_orange_light"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button1"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignStart="@+id/button1"
+        android:onClick="goToStockHawkApp"/>
+
+    <Button
+        android:text="BUILD IT BIGGER"
+        android:background="@android:color/holo_orange_light"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:onClick="goToBuildItBiggerApp"/>
+
+    <Button
+        android:text="MAKE YOUR APP MATERIAL"
+        android:background="@android:color/holo_orange_light"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:onClick="goToMaterialApp"/>
+
+    <Button
+        android:text="GO UBIQUITOUS"
+        android:background="@android:color/holo_orange_light"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_alignLeft="@+id/button4"
+        android:onClick="goToGoUbiquitousApp"/>
+
+    <Button
+        android:text="CAPSTONE: MY OWN APP"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/button6"
+        android:layout_below="@+id/button5"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:onClick="goToCapastoneApp"/>
+
+</RelativeLayout>
